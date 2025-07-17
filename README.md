@@ -144,10 +144,6 @@ A fully interactive web-based research and storytelling platform that combines t
 - **Mobile App**: Native mobile application
 - **Cloud Storage**: Save and sync projects across devices
 
-## 📄 License
-
-This project is open source and available under the MIT License.
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
