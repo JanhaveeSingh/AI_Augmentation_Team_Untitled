@@ -144,10 +144,3 @@ A fully interactive web-based research and storytelling platform that combines t
 - **Mobile App**: Native mobile application
 - **Cloud Storage**: Save and sync projects across devices
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
----
-
-**Built with ❤️ for researchers, journalists, and storytellers everywhere.** 
