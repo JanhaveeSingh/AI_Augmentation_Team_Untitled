@@ -1,0 +1,152 @@
+.mindmap-toolbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 100;
+    min-width: 200px;
+}
+
+.toolbar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.toolbar-section:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 16px;
+}
+
+.toolbar-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.toolbar-btn span {
+    color: #374151;
+    font-weight: 500;
+}
+
+.toolbar-btn:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.toolbar-btn:active {
+    transform: translateY(1px);
+}
+
+.toolbar-btn svg {
+    flex-shrink: 0;
+}
+
+.toolbar-btn.active {
+    background-color: #2563eb;
+    color: white;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
+}
+
+.toolbar-btn.active:hover {
+    background-color: #1d4ed8;
+}
+
+.connection-mode-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(37, 99, 235, 0.9);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    animation: fadeInOut 2s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoom-display {
+    text-align: center;
+    padding: 6px 12px;
+    background: #f3f4f6;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+    margin: 4px 0;
+}
+
+.toolbar-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 8px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.info-item {
+    font-size: 12px;
+    color: #6b7280;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .mindmap-toolbar {
+        top: 10px;
+        left: 10px;
+        padding: 12px;
+        min-width: 160px;
+    }
+
+    .toolbar-btn {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+
+    .toolbar-btn span {
+        display: none;
+    }
+
+    .toolbar-section {
+        gap: 4px;
+    }
+
+    .toolbar-section:not(:last-child) {
+        padding-bottom: 12px;
+    }
+}
